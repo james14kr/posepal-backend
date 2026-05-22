@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:mariadb://localhost:3306/formcheck_db?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: mariadb
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+jwt:
+  secret: formcheck-ai-secret-key-must-be-at-least-256-bits-long-for-hs256
+  expiration: 86400000
+
+server:
+  port: 8080
